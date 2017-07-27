@@ -10,6 +10,10 @@
 }
 
 .navbar-brand {
+  font-size: 16px;
+}
+
+.navbar-nav>li> a {
   font-size: 14px;
 }
 
@@ -24,7 +28,7 @@
 
 
 body {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 h1 {
