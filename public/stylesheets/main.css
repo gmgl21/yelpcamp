@@ -1,8 +1,55 @@
+.navbar-sm {
+  background-color: rgba(221, 221, 221, 0.3);
+  height: 40px;
+  margin-bottom: 15px;
+}
+.navbar-brand,
+.navbar-nav>li> a {
+  color: #777;
+  line-height: 10px;
+}
+
+.navbar-brand {
+  font-size: 14px;
+}
+
+.navbar-sm .navbar-nav>.active>a {
+  background-color: #e7e7e7;
+}
+
+.navbar-brand:hover,
+.navbar-nav > li > a:hover {
+  color: #565656;
+}
+
+
+body {
+  font-size: 11px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.loginRegister {
+  width: 30%;
+  margin: 25px auto;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#forgotPassword {
+  float: right;
+}
 .thumbnail img {
   width: 100%;
 }
 
 .thumbnail {
+  border: none;
   padding: 0;
 }
 
@@ -12,4 +59,17 @@
 
 .delete-form {
   display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+#user-profile {
+  margin-top: 38px;
+}
+
+#user-header {
+  padding-left: 50px;
+  margin-top: 0;
 }
