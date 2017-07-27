@@ -27,10 +27,11 @@ router.post("/register", function(req, res) {
       firstName: req.body.firstName, 
       lastName: req.body.lastName, 
       email: req.body.email,
+      about: req.body.about,
       avatar: req.body.avatar
     }
   );
-  if(req.body.adminCode === 'asdfgzxcv2017') {
+  if(req.body.adminCode === process.env.ADMINCODE) {
     newUser.isAdmin = true;
   }
     User.register(newUser, req.body.password, function(err, user) {
