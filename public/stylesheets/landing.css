@@ -1,6 +1,9 @@
 body {
   background-color: #000;
 }
+.container {
+  max-height: 100vh;
+}
 
 #landing-header {
   z-index: 1;
@@ -79,4 +82,29 @@ body {
 /* Older browser support - .no-cssanimations class added by modernizr */
 .no-cssanimations .slideshow li {
 	opacity: 1;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  #landing-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+  }
+  h1 {
+    display: flex;
+    align-self: center;
+    font-size: 100px;
+  }
+  
+  .btn-success {
+    display: flex;
+    align-self: center;
+    width: 550px;
+    font-size: 50px;
+  }
 }
